@@ -7,11 +7,11 @@ def rewind(f):
     f.seek(0)
 
 def print_a_line(line_count, f):
-    print(line_count, f.readline())
+    print(line_count, f.readline(), end='')
 
 def main():
     script, input_file = argv
-    
+
     current_file = open(input_file)
 
     print("First let's pring the whole file:\n")
